@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+	<header class="header-nav">
+		<h1>Logo</h1>
+		<nav>
+			<ul>
+				<li>
+					<a asp-action="Index"asp-controller="Home">Home</a>
+				</li>
+				<li>
+					<a asp-action="Contact"asp-controller="Home">Contact</a>
+				</li>
+				<li>
+					<a asp-action="About"asp-controller="Home">About</a>
+				</li>
+				<li>
+					<a asp-action="Projects"asp-controller="Home">Projects</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div>
+		@RenderBody()
+	</div>
+	<footer>
+		<p>&copy; Erik Christensson @DateTime.Now.Year</p>
+	</footer>
+</body>
+</html>
